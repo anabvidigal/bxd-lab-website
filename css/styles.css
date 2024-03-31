@@ -30,8 +30,6 @@ header ul {
 header li {
     margin: 1em 1em;
     padding: .5em .75em;
-    border: 2px solid #262522;
-    border-radius: .5em;
 }
 
 header a {
@@ -40,18 +38,28 @@ header a {
     text-decoration: none;
 }
 
-header a:hover,
-header a:focus {
-    color: #B65515;
-}
-
-
 .nav-logo {
     max-width: 80px;
     min-width: 60px;
     width: 100%;
     height: auto;
     object-fit: contain;
+}
+
+.current-page {
+    border: 2px solid #262522;
+    border-radius: .5em;
+    margin: 1em 1em;
+    padding: .5em .75em;
+}
+
+.current-page:hover {
+    border: 2px solid #B65515;
+}
+
+header a:hover,
+header a:focus {
+    color: #B65515;
 }
 
 /* ==============
