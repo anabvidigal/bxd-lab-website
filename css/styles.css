@@ -18,7 +18,8 @@ p,
 a,
 h1,
 h2,
-h3 {
+h3,
+ol {
     font-family: 'Raleway';
     font-weight: 400;
 }
@@ -34,6 +35,10 @@ h2 {
 p {
     font-size: 1.5em;
     font-weight: 300;
+}
+
+ol {
+    font-size: 1.5em;
 }
 
 .light {
@@ -153,6 +158,10 @@ body {
     width: 50%;
 }
 
+.col-3 {
+    width: 75%;
+}
+
 .img-full {
     width: 100%;
     height: auto;
@@ -189,9 +198,8 @@ body {
     color: var(--brown);
 }
 
-.home-section-3 img {
-    height: 20%;
-    max-height: 900px;
+.side-image {
+    max-height: 800px;
     width: auto;
     object-fit: contain;
 }
@@ -220,6 +228,18 @@ body {
     max-width: 10em;
 }
 
+@media (max-width: 1150px) {
+    .section-3-watermark {
+        display: none;
+    }
+
+    .side-image {
+        width: auto;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
 .title-with-border {
     border: solid 3px var(--brown);
     border-radius: 2em;
@@ -233,6 +253,40 @@ body {
     width: auto;
     margin: 0;
     padding: .1em 0;
+}
+
+.home-section-4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: var(--brown);
+}
+
+.home-section-4 li {
+    margin-bottom: 2em;
+}
+
+.section-4-inner {
+    border: 2em;
+}
+
+.home-section-5 {
+    background-image: url(../images/home-2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10em 4em;
+    color: var(--beige);
+}
+
+.quote {
+    font-size: 2em;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.quote-author {
+    font-weight: 400;
+    font-size: 1.5em;
 }
 
 /* ==============
